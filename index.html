@@ -132,13 +132,28 @@ body{padding-bottom:112px;overflow-x:hidden}
 .cta .script{color:#e3eca8}
 @media(min-width:768px){.hero-content{bottom:calc(110px + 4vh)}}
 @media(min-width:768px) and (max-width:1050px){.navbar{padding-left:3%;padding-right:3%}.navlinks{gap:14px;font-size:.66rem}.desktop-cta{padding:10px 13px;font-size:.65rem}.brand{font-size:1rem}}
+
+.logo-brand{display:block;line-height:0;flex-shrink:0}
+.site-logo{display:block;width:235px;max-width:100%;height:auto;object-fit:contain}
+footer .logo-brand{display:inline-block;padding:10px 14px;background:#f6f4ee;border-radius:5px}
+footer .site-logo{width:270px}
+.offcanvas-header .site-logo{width:200px}
+.hero-phone{font-size:1rem;letter-spacing:.02em;padding:15px 24px}
+.hero-phone strong,.call-banner a strong{font-weight:800;letter-spacing:.04em}
+.footer-phone{font-size:1.05rem;color:#e7efb8}
+.footer-phone small{display:block;font-size:.8rem;color:#b6beb6;margin-top:5px}
+@media(min-width:768px) and (max-width:1100px){.site-logo{width:185px}.navlinks{gap:12px}.desktop-cta{font-size:.63rem;padding:10px 12px}.navbar{padding-left:3%;padding-right:3%}}
+@media(max-width:767px){.site-logo{width:190px}footer .site-logo{width:240px}.hero-phone{font-size:.9rem}}
+
+footer .footer-name{display:inline-block;white-space:nowrap;font-size:clamp(15px,2vw,21px);line-height:1.25;letter-spacing:-.03em}
+footer .footer-name small{white-space:normal;font-size:8px;letter-spacing:.15em;margin-top:8px;line-height:1.6}
 </style>
 <link rel="canonical" href="https://www.atlantadogtraining.org/">
 </head>
 <body>
   <div class="topline">Dog training options in Atlanta &nbsp;·&nbsp; Call (404) 587-OBEY</div>
   <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
-    <a class="brand" href="#top" aria-label="Atlanta Dog Training home">ATLANTA DOG<small>TRAINING · ATLANTA, GEORGIA</small></a>
+    <a class="brand logo-brand" href="#top" aria-label="Atlanta Dog Training home"><img class="site-logo" src="assets/atlanta-dog-training-logo.png" alt="Atlanta Dog Training" width="2172" height="724"></a>
     <div class="navlinks d-none d-md-flex">
       <a href="#approach">Our approach</a><a href="#programs">Programs</a><a href="#experience">The experience</a><a href="#stories">Inspiration</a>
     </div>
@@ -146,7 +161,7 @@ body{padding-bottom:112px;overflow-x:hidden}
     <button class="menu-toggle d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation"><i class="bi bi-list"></i></button>
   </nav>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-label="Mobile navigation">
-    <div class="offcanvas-header"><span class="brand">ATLANTA DOG<small>TRAINING</small></span><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+    <div class="offcanvas-header"><span class="brand logo-brand"><img class="site-logo" src="assets/atlanta-dog-training-logo.png" alt="Atlanta Dog Training" width="2172" height="724"></span><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
     <div class="offcanvas-body d-flex flex-column gap-4"><a href="#approach" data-bs-dismiss="offcanvas">Our approach</a><a href="#programs" data-bs-dismiss="offcanvas">Programs</a><a href="#experience" data-bs-dismiss="offcanvas">The experience</a><a href="#stories" data-bs-dismiss="offcanvas">Inspiration</a><a href="tel:+14045876239" data-bs-dismiss="offcanvas">Call (404) 587-OBEY</a></div>
   </div>
 
@@ -161,7 +176,7 @@ body{padding-bottom:112px;overflow-x:hidden}
           <h1>A better kind<br>of <em>together.</em></h1>
           <p class="hero-copy">Good training changes more than behavior. It gives you the confidence to take on the world side by side.</p>
           <p class="referral-intro">An independent dog training referral website for Atlanta. Trainer availability varies.</p>
-          <div class="hero-bottom"><a class="pill" href="#programs">FIND YOUR PROGRAM <i class="bi bi-arrow-up-right"></i></a><a class="hero-note" href="tel:+14045876239">Call (404) 587-OBEY</a></div>
+          <div class="hero-bottom"><a class="pill hero-phone" href="tel:+14045876239" aria-label="Call Atlanta Dog Training at 404 587 6239">Call (404) <strong>587-OBEY</strong><i class="bi bi-telephone"></i></a><a class="hero-note" href="#programs">Explore training options</a></div>
         </div>
       </div>
     </section>
@@ -252,9 +267,9 @@ body{padding-bottom:112px;overflow-x:hidden}
   <footer>
     <div class="container">
       <div class="row gy-4 align-items-start">
-        <div class="col-md-5"><a class="brand" href="#top">ATLANTA DOG<small>TRAINING · A BETTER KIND OF TOGETHER</small></a></div>
+        <div class="col-md-5"><a class="brand footer-name" href="#top">ATLANTA DOG TRAINING<small>A BETTER KIND OF TOGETHER</small></a></div>
         <div class="col-6 col-md-3"><div class="eyebrow mb-3">Explore</div><p><a href="#approach">Our approach</a></p><p><a href="#programs">Training programs</a></p><p><a href="#experience">Training settings</a></p></div>
-        <div class="col-6 col-md-4"><div class="eyebrow mb-3">Call (404) 587-OBEY</div><p><a href="tel:+14045876239">(404) 587-6239</a></p><p>Atlanta, Georgia</p><a href="tel:+14045876239" class="text-link text-white border-white">CALL (404) 587-OBEY <i class="bi bi-arrow-up-right"></i></a></div>
+        <div class="col-6 col-md-4"><div class="eyebrow mb-3">Call (404) 587-OBEY</div><p><a class="footer-phone" href="tel:+14045876239">(404) <strong>587-OBEY</strong><small>(404) 587-6239</small></a></p><p>Atlanta, Georgia</p><a href="tel:+14045876239" class="text-link text-white border-white">CALL (404) 587-OBEY <i class="bi bi-arrow-up-right"></i></a></div>
       </div>
       <p class="referral-disclosure">Atlanta Dog Training is an independent referral website, not a dog training facility. We may receive compensation for qualifying calls. Trainers are independent businesses responsible for their services. Service areas, programs, availability and prices vary; confirm details directly before booking. Images are illustrative and do not depict our facilities or verified client results.</p>
       <div class="footer-bottom d-flex justify-content-between"><span>© 2026 Atlanta Dog Training</span><span>Built for a life together.</span></div>
@@ -301,6 +316,6 @@ body{padding-bottom:112px;overflow-x:hidden}
       document.getElementById('next').addEventListener('click', () => track.scrollBy({left:track.clientWidth*.75,behavior:reduced?'auto':'smooth'}));
     })();
   </script>
-<aside class="call-banner" aria-label="Call Atlanta Dog Training"><span>Find training options for your dog<small>Atlanta, Georgia</small></span><a href="tel:+14045876239" aria-label="Call Atlanta Dog Training at 404 587 6239">Call (404) 587-OBEY<small>(404) 587-6239</small></a></aside>
+<aside class="call-banner" aria-label="Call Atlanta Dog Training"><span>Find training options for your dog<small>Atlanta, Georgia</small></span><a href="tel:+14045876239" aria-label="Call Atlanta Dog Training at 404 587 6239">Call (404) <strong>587-OBEY</strong><small>(404) 587-6239</small></a></aside>
 </body>
 </html>
